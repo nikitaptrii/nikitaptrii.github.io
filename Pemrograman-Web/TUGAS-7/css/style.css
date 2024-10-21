@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #007BFF;
+    --background-color: #f0f0f0;
+    --form-background: #fff;
+    --border-color: #ccc;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    background: var(--form-background);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the inputs horizontally */
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3; 
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3; /* Darken effect for the link on hover */
+}
+
